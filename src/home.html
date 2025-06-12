@@ -22,43 +22,43 @@
 <body>
 <!-- Tagline Start -->
 <div class="hidden bg-slate-900 md:block">
-    <div class="container mx-auto">
+    <div class="container mx-auto px-3 md:px-6 lg:px-8">
         <div class="text-white flex justify-between items-center py-3">
-            <ul class="flex items-center space-x-6">
+            <ul class="flex items-center space-x-3 lg:space-x-6">
                 <li class="flex items-center">
                     <i data-feather="clock" class="text-red-500 size-4"></i>
-                    <span class="ms-2 text-slate-300">Sun-Thu: 9:00am to 6:00pm</span>
+                    <span class="ms-2 text-slate-300 text-sm">Sun-Thu: 9:00am to 6:00pm</span>
                 </li>
                 <li class="flex items-center">
                     <i data-feather="map-pin" class="text-red-500 size-4"></i>
-                    <span class="ms-2 text-slate-300">Belly Road, Fulpur 143</span>
+                    <span class="ms-2 text-slate-300 text-sm">Belly Road, Fulpur 143</span>
                 </li>
             </ul>
-            <ul class="flex items-center space-x-6">
+            <ul class="flex items-center space-x-3 lg:space-x-6">
                 <li class="flex items-center">
                     <i data-feather="mail" class="text-red-500 size-4"></i>
                     <span class="ms-2 text-slate-300">
-                        <a href="mailto:pouchcaretravel@gmail.com" class="text-slate-300 hover:text-slate-200">pouchcare@travel.com</a>
+                        <a href="mailto:pouchcaretravel@gmail.com" class="text-slate-300 hover:text-slate-200 text-sm">pouchcare@travel.com</a>
                     </span>
                 </li>
                 <li>
-                    <ul class="flex items-center space-x-2">
-                        <li class="inline-flex mb-0">
+                    <ul class="flex items-center gap-0">
+                        <li class="inline-flex">
                             <a href="#!" class="text-slate-300 hover:text-red-500">
                                 <i data-feather="facebook" class="size-4 align-middle" title="facebook"></i>
                             </a>
                         </li>
-                        <li class="inline-flex ms-2 mb-0">
+                        <li class="inline-flex ms-2">
                             <a href="#!" class="text-slate-300 hover:text-red-500">
                                 <i data-feather="instagram" class="size-4 align-middle" title="instagram"></i>
                             </a>
                         </li>
-                        <li class="inline-flex ms-2 mb-0">
+                        <li class="inline-flex ms-2">
                             <a href="#!" class="text-slate-300 hover:text-red-500">
                                 <i data-feather="twitter" class="size-4 align-middle" title="twitter"></i>
                             </a>
                         </li>
-                        <li class="inline-flex ms-2 mb-0">
+                        <li class="inline-flex ms-2">
                             <a href="tel:+152534-468-854" class="text-slate-300 hover:text-red-500">
                                 <i data-feather="phone" class="size-4 align-middle" title="phone"></i>
                             </a>
@@ -70,12 +70,99 @@
     </div>
 </div>
 <!-- Tagline End -->
+<!-- Navbar Start -->
+ <nav class="bg-white">
+    <div class="container mx-auto flex justify-between items-center px-3 md:px-6 lg:px-8">
+        <!-- logo -->
+        <a href="./home.html" class="flex items-center py-4">
+            <img src="../assets/img/logo2.webp" alt="Pouch Care Logo" class="h-14 lg:h-16">
+        </a>
+
+        <div class="flex items-center gap-2">
+            <div class="flex items-center space-x-4">
+                <!-- desktop Menu Start -->
+                <ul class="hidden lg:flex items-center space-x-6">
+                    <li>
+                        <a href="./home.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./home.html">Our Packages</a>
+                    </li>
+                    <li>
+                        <a href="./home.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="./home.html">Blog</a>
+                    </li>
+                    <li>
+                        <a href="./home.html">Contact Us</a>
+                    </li>
+                </ul>
+                <!-- desktop Menu End -->
+                
+                <!-- login Button Start -->
+                <ul class="buy-button list-none mb-0">
+                    <li class="dropdown inline-block relative pe-1">
+                        <button data-dropdown-toggle="dropdown" class="dropdown-toggle align-middle inline-flex search-dropdown" type="button">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search size-5 dark-icon"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                            <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search size-5 white-icon text-white"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg> -->
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div class="dropdown-menu absolute overflow-hidden end-0 m-0 mt-5 z-10 md:w-52 w-48 rounded-md bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-800 hidden" onclick="event.stopPropagation();">
+                            <div class="relative">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search size-4 absolute top-[9px] end-3"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                                <input type="text" class="h-9 px-3 pe-10 w-full border-0 focus:ring-0 outline-none" name="s" id="searchItem" placeholder="Search...">
+                            </div>
+                        </div>
+                    </li>
+                            
+                    <li class="dropdown inline-block relative ps-0.5">
+                        <button data-dropdown-toggle="dropdown" class="dropdown-toggle items-center" type="button">
+                            <span class="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-md border border-red-500 bg-red-500 text-white">
+                                <img src="../assets/img/16.jpg" class="rounded-md" alt="user profile">
+                            </span>
+                        </button>
+                        <!-- Dropdown menu -->
+                        <div class="dropdown-menu absolute end-0 m-0 mt-4 z-10 w-48 rounded-md overflow-hidden bg-white dark:bg-slate-900 shadow-sm dark:shadow-gray-800 hidden" onclick="event.stopPropagation();">
+                            <ul class="py-2 text-start">
+                                <li>
+                                    <a href="user-profile.html" class="flex items-center font-medium py-2 px-4 dark:text-white/70 hover:text-red-500 dark:hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user size-4 me-2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>Profile</a>
+                                </li>
+                                <li>
+                                    <a href="helpcenter.html" class="flex items-center font-medium py-2 px-4 dark:text-white/70 hover:text-red-500 dark:hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-help-circle size-4 me-2"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>Helpcenter</a>
+                                </li>
+                                <li>
+                                    <a href="user-setting.html" class="flex items-center font-medium py-2 px-4 dark:text-white/70 hover:text-red-500 dark:hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-settings size-4 me-2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>Settings</a>
+                                </li>
+                                <li class="border-t border-gray-100 dark:border-gray-800 my-2"></li>
+                                <li>
+                                    <a href="login.html" class="flex items-center font-medium py-2 px-4 dark:text-white/70 hover:text-red-500 dark:hover:text-white"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out size-4 me-2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>Logout</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
+                <!-- login Button End -->
+            </div>
+
+            <!-- Mobile Menu Start -->
+            <div class="lg:hidden">
+                <button class="mobile-menu-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><path d="M3 12h18M3 6h18M3 18h18"></path></svg>
+                </button>
+            </div>
+            <!-- Mobile Menu End -->
+        </div>
+    </div>
+</nav>
+
+
+
+<!-- Navbar End -->
 
 
 
 
-
-https://shreethemes.in/travosy/layouts/index.html
 
 
 
