@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+  /* Classes that can be used after becoming sticky */
+.sticky-nav {
+  @apply fixed top-0 left-0 w-full bg-white/90 shadow-md backdrop-blur-md transition-all duration-300 ease-in-out;
+  /* Adjust text, logo, padding, etc. as needed. */
+}
+
+.navbar-padding {
+  @apply py-4;
+}
+.navbar-padding-sm {
+  @apply py-2;
+}

@@ -71,11 +71,11 @@
 </div>
 <!-- Tagline End -->
 <!-- Navbar Start -->
- <nav class="relative z-50">
+<nav id="navbar" class="navbar relative z-50 transition-all duration-300 ease-in-out">
     <div class="container mx-auto flex justify-between items-center px-3 md:px-6 lg:px-8">
         <!-- logo -->
         <a href="./home.html" class="flex items-center py-4">
-            <img src="../assets/img/logo.webp" alt="Pouch Care Logo" class="h-14 lg:h-16">
+            <img id="navbar-logo" src="../assets/img/logo.webp" alt="Pouch Care Logo" class="h-14 lg:h-16 transition-all duration-300">
         </a>
         <!-- Menu Start -->
         <div class="flex items-center gap-2">
@@ -84,27 +84,27 @@
                 <!--  Menu items Start -->
                 <ul class="hidden lg:flex items-center space-x-6">
                     <li>
-                        <a href="./home.html" class="active relative group font-medium text-white/50 hover:text-red-500 transition-all duration-300">Home
+                        <a href="./home.html" class="menu-link relative group font-medium text-white/50 hover:text-red-500 transition-all duration-300">Home
                             <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-red-500 transition-all duration-500 group-hover:w-full"></span>
                         </a>
                     </li>
                     <li>
-                        <a href="./package.html" class="relative group font-medium text-white/50 hover:text-red-500 transition-all duration-300">Our Packages
+                        <a href="./package.html" class=" menu-link relative group font-medium text-white/50 hover:text-red-500 transition-all duration-300">Our Packages
                             <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-red-500 transition-all duration-500 group-hover:w-full"></span>
                         </a>
                     </li>
                     <li>
-                        <a href="./about.html" class="relative group font-medium text-white/50 hover:text-red-500 transition-all duration-300">About Us
+                        <a href="./about.html" class="menu-link relative group font-medium text-white/50 hover:text-red-500 transition-all duration-300">About Us
                             <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-red-500 transition-all duration-500 group-hover:w-full"></span>
                         </a>
                     </li>
                     <li>
-                        <a href="./blog.html" class="relative group font-medium text-white/50 hover:text-red-500 transition-all duration-300">Blog
+                        <a href="./blog.html" class="menu-link relative group font-medium text-white/50 hover:text-red-500 transition-all duration-300">Blog
                             <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-red-500 transition-all duration-500 group-hover:w-full"></span>
                         </a>
                     </li>
                     <li>
-                        <a href="./contact.html" class="relative group font-medium text-white/50 hover:text-red-500 transition-all duration-300">Contact Us
+                        <a href="./contact.html" class="menu-link relative group font-medium text-white/50 hover:text-red-500 transition-all duration-300">Contact Us
                             <span class="absolute left-0 -bottom-1 w-0 h-[2px] bg-red-500 transition-all duration-500 group-hover:w-full"></span>
                         </a>
                     </li>
@@ -114,7 +114,7 @@
                 <!-- login Button Start -->
                 <ul class="mb-0">
                     <li class="dropdown inline-block relative pe-1">
-                        <button data-dropdown-toggle="dropdown" class="dropdown-toggle align-middle inline-flex search-dropdown" type="button">
+                        <button id="navbar-toggle" data-dropdown-toggle="dropdown" class="dropdown-toggle align-middle inline-flex search-dropdown" type="button">
                             <!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search size-5 dark-icon"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg> -->
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-search size-5 white-icon text-white hover:text-red-500 transition-all duration-300"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
                         </button>
@@ -128,7 +128,7 @@
                     </li>
                             
                     <li class="dropdown inline-block relative ps-0.5">
-                        <button data-dropdown-toggle="dropdown" class="dropdown-toggle items-center" type="button">
+                        <button id="navbar-toggle" data-dropdown-toggle="dropdown" class="dropdown-toggle items-center" type="button">
                             <span class="size-8 inline-flex items-center justify-center tracking-wide align-middle duration-500 text-base text-center rounded-md border border-red-500 bg-red-500 text-white">
                                 <img src="../assets/img/user.jpg" class="rounded-md" alt="user profile">
                             </span>
@@ -179,10 +179,10 @@
         <div class="grid md:grid-cols-12 grid-cols-1 items-center mt-10 gap-[30px]">
             <div class="lg:col-span-8 md:col-span-7 md:order-1 order-2">
                 <span class="text-red-500 text-2xl font-semibold capitalize">Beauty is a mirror to the soul.</span>
-                <h1 class="text-white font-bold text-4xl md:text-3xl lg:text-5xl my-4">Let's leave the road, 
+                <h1 class="text-white font-bold text-4xl md:text-3xl lg:text-5xl xl:text-6xl my-4">Let's leave the road, 
                     <br>And Take The <span class="text-red-500">Pouch Care</span>.
                 </h1>
-                <p class="text-slate-300 font- text-xl">Planning for a trip? We will organize everything for your journey,
+                <p class="text-slate-300 text-lg">Planning for a trip? We will organize everything for your journey,
                     <br class="hidden lg:block"> including the best places in the world, all within your budget!</p>
             </div>
             <div class="lg:col-span-4 md:col-span-5 md:text-center md:order-2 order-1">
@@ -192,9 +192,27 @@
             </div>
         </div>
     </div>
-    
 </section>
 <!-- Hero Section End -->
+
+<!-- Search Section Start -->
+<section class="relative -mt-24 lg:pt-72 lg:pb-56 xl:pt-76 xl:pb-64 py-42 table w-full items-center bg-[url('../assets/img/herobg.jpg')] bg-top bg-no-repeat bg-cover overflow-hidden">
+    <div class="absolute inset-0 bg-black/50"></div>
+    <div class="container mx-auto px-3 md:px-6 lg:px-8 relative z-10">
+        <div class="grid md:grid-cols-12 grid-cols-1 items-center mt-10 gap-[30px]">
+            <div class="lg:col-span-8 md:col-span-7 md:order-1 order-2">
+                <span class="text-red-500 text-2xl font-semibold capitalize">Search Your Destination</span>
+                <h1 class="text-white font-bold text-4xl md:text-3xl lg:text-5xl my-4">Where would you like to go?</h1>
+
+                <div class="search">
+                    <input type="text" placeholder="Search Your Destination">
+                    <button type="submit"><i data-feather="search"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Search Section End -->
 
 
 
@@ -222,7 +240,7 @@
 
 <script>
     feather.replace()
-  </script>
+</script>
 
 </body>
 </html>
