@@ -281,39 +281,22 @@
 <!-- Header -->
 <header 
     id="navbar"
-    class="fixed top-0 left-0 w-full z-50 transition-all duration-300"
+    class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-white lg:hidden"
     x-data="{ open: false }"
     :class="{ 'bg-white/90 shadow backdrop-blur': window.scrollY > 50 }"
 >
     <div class="container mx-auto px-4 flex justify-between items-center h-16">
         <!-- Logo -->
         <a href="/">
-            <img id="navbar-logo" src="../assets/img/logo.webp" alt="Logo" class="h-10 transition-all duration-300" />
+            <img id="navbar-logo" src="../assets/img/logo3.webp" alt="Logo" class="h-10 transition-all duration-300" />
         </a>
 
-        <!-- Desktop Menu -->
-        <nav class="hidden lg:flex space-x-6">
-            <a href="#" class="menu-link text-white/50 hover:text-red-500 transition" :class="{ 'text-gray-900': window.scrollY > 50, 'text-red-500 font-bold': $el.classList.contains('active') }">Home</a>
-            <a href="#" class="menu-link text-white/50 hover:text-red-500 transition">Features</a>
-            <div class="relative group">
-                <button class="menu-link text-white/50 hover:text-red-500 transition flex items-center">
-                    Services
-                    <svg class="ml-1 h-4 w-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                        <path d="M19 9l-7 7-7-7" />
-                    </svg>
-                </button>
-                <!-- Dropdown -->
-                <div class="absolute top-full mt-2 left-0 w-40 bg-white rounded shadow opacity-0 group-hover:opacity-100 scale-95 group-hover:scale-100 transition-all origin-top duration-200">
-                    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Web Design</a>
-                    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Marketing</a>
-                </div>
-            </div>
-        </nav>
+        
 
         <!-- Mobile Toggle -->
         <div class="lg:hidden">
             <button @click="open = !open" aria-label="Toggle Menu">
-                <svg :class="{ 'text-gray-900': window.scrollY > 50, 'text-white': window.scrollY <= 50 }"
+                <svg :class="{ 'text-gray-900': window.scrollY > 50, 'text-black': window.scrollY <= 50 }"
                      class="w-6 h-6 transition-all duration-300" fill="none" stroke="currentColor" stroke-width="2"
                      viewBox="0 0 24 24">
                     <path x-show="!open" d="M4 6h16M4 12h16M4 18h16"></path>
