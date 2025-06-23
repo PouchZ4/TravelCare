@@ -156,7 +156,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const iframe = document.getElementById("youtube-iframe");
   const closeBtn = document.getElementById("close-video");
 
-  const youtubeURL = "https://www.youtube.com/embed/5qap5aO4i9A?autoplay=1";
+  const youtubeURL = "https://www.youtube.com/embed/nZmO8B9rRik?si=iXFXGfKaB3LKPGa-";
 
   playBtn.addEventListener("click", function () {
     videoModal.classList.remove("hidden");
@@ -179,6 +179,13 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 });
+
+// Flatpickr Date Picker Initialization
+  document.addEventListener('DOMContentLoaded', function () {
+    flatpickr("#dateInput", {
+      dateFormat: "Y-m-d",
+    });
+  });
 
 
 
