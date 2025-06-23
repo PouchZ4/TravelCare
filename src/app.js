@@ -148,3 +148,37 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
+// JavaScript Logic for Video Popup
+
+document.addEventListener("DOMContentLoaded", function () {
+  const playBtn = document.getElementById("play-video-btn");
+  const videoModal = document.getElementById("video-modal");
+  const iframe = document.getElementById("youtube-iframe");
+  const closeBtn = document.getElementById("close-video");
+
+  const youtubeURL = "https://www.youtube.com/embed/5qap5aO4i9A?autoplay=1";
+
+  playBtn.addEventListener("click", function () {
+    videoModal.classList.remove("hidden");
+    videoModal.classList.add("flex");
+    iframe.src = youtubeURL;
+  });
+
+  closeBtn.addEventListener("click", function () {
+    videoModal.classList.add("hidden");
+    videoModal.classList.remove("flex");
+    iframe.src = "";
+  });
+
+  // Optional: click outside modal closes it
+  videoModal.addEventListener("click", function (e) {
+    if (e.target === videoModal) {
+      videoModal.classList.add("hidden");
+      videoModal.classList.remove("flex");
+      iframe.src = "";
+    }
+  });
+});
+
+
+
