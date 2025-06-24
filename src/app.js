@@ -1,3 +1,6 @@
+
+
+
 // JavaScript Logic for Navbar and Dropdowns
 document.addEventListener('DOMContentLoaded', function () {
   const dropdownToggles = document.querySelectorAll('[data-dropdown-toggle]');
@@ -62,17 +65,17 @@ document.addEventListener('DOMContentLoaded', function () {
     // Update menu items color based on scroll and mobile state
     // Inside windowScroll() function → update this section:
     menuItems.forEach(link => {
-      link.classList.remove("text-white/70", "text-white/50", "text-gray-900", "text-red-600", "text-black", "text-red-500");
+      link.classList.remove("text-white/70", "text-white/50", "text-gray-900", "text-white", "text-black", "text-red-500");
 
       if (isMobile) {
         if (link.classList.contains("active")) {
-          link.classList.add("text-red-00");
+          link.classList.add("text-red-500");
         } else {
           link.classList.add("text-black");
         }
       } else {
         if (link.classList.contains("active")) {
-          link.classList.add(isScrolled ? "text-red-600" : "text-white");
+          link.classList.add(isScrolled ? "text-red-500" : "text-white");
         } else {
           link.classList.add(isScrolled ? "text-gray-900" : "text-white/50");
         }
@@ -131,6 +134,8 @@ document.addEventListener("DOMContentLoaded", function () {
       dateFormat: "Y-m-d",
     });
   });
+
+
 
 
 
