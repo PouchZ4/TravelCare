@@ -868,22 +868,82 @@
         <!-- See More Tours -->
         <div class="text-center mt-10">
             <a href="./package.html" class="inline-block px-6 py-3 bg-red-500 text-white hover:text-slate-950 font-semibold rounded-md hover:bg-red-600 transition-colors duration-300">See More Tours <i data-feather="arrow-right" class="w-4 h-4 inline"></i></a>
-            
         </div>
     </div>
 
 </section>
 <!-- Popular Tours Section End -->
 
+<!-- About Section Start -->
+<section class="bg-slate-950 py-10 md:py-16 lg:py-20 xl:py-24">
+    <div class="container mx-auto relative px-4">
+        <div class="grid md:grid-cols-12 grid-cols-1 items-center gap-6 relative">
+            <!-- Left Image with Counters -->
+            <div class="md:col-span-5" data-aos="fade-up" data-aos-duration="1000">
+                <div class="relative">
+                    <img src="../assets/img/about.jpg" alt="About" class="mx-auto rounded-3xl shadow-sm w-[90%] xl:w-[70%] object-cover">
 
+                    <!-- Counter 1 -->
+                    <div class="absolute flex items-center bottom-16 md:start-10 -start-5 p-4 rounded-lg shadow-md shadow-gray-800 bg-slate-950 w-56 m-3" data-aos="fade-right" data-aos-delay="300">
+                        <div class="flex items-center justify-center h-[65px] min-w-[65px] bg-red-500/5 text-red-500 rounded-xl me-3">
+                            <i data-feather="users" class="size-6"></i>
+                        </div>
+                        <div class="flex-1">
+                            <span class="text-slate-400">Visitor</span>
+                            <p class="text-xl font-bold text-white"><span class="counter" data-target="845134">0</span></p>
+                        </div>
+                    </div>
 
+                    <!-- Counter 2 -->
+                    <div class="absolute flex items-center top-16 md:end-5 -end-5 p-4 rounded-lg shadow-md shadow-gray-800 bg-slate-950 w-60 m-3" data-aos="fade-left" data-aos-delay="300">
+                        <div class="flex items-center justify-center h-[65px] min-w-[65px] bg-red-500/5 text-red-500 rounded-xl me-3">
+                            <i data-feather="globe" class="size-6"></i>
+                        </div>
+                        <div class="flex-1">
+                            <span class="text-slate-400">Travel Packages</span>
+                            <p class="text-xl font-bold text-white"><span class="counter" data-target="143">0</span>+</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Right Text -->
+            <div class="md:col-span-7 relative z-2" data-aos="fade-left" data-aos-duration="1000">
+                <div class="lg:ms-8">
+                    <h2 class="text-white mb-6 md:text-3xl text-2xl md:leading-normal leading-normal font-semibold">
+                    World Best Travel <br> Agency: <span class="text-red-500 font-bold">Pouch Care</span> Travels
+                    </h2>
+                    <p class="text-slate-400 max-w-xl mb-6">
+                    Get instant helpful resources about anything on the go, boost your daily efficiency, and connect to other app users and much more with just a few taps. Get instant helpful resources about anything on the go, boost your daily efficiency, and connect to other app users and much more with just a few taps.
+                    </p>
+                    <a href="./about.html" class="inline-block px-6 py-3 bg-red-500 text-white hover:text-slate-950 font-semibold rounded-md hover:bg-red-600 transition-colors duration-300">Learn More <i data-feather="arrow-right" class="w-4 h-4 inline"></i></a>
+                </div>
+            </div>
 
+            <!-- Background Plane -->
+            <div class="absolute start-1/3 bottom-0 z-1">
+                <img src="../assets/img/map-plane-big.png" class="lg:w-[600px] w-96" alt="Plane">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About Section End -->
 
+<!-- Testimonial Section Start -->
+<section class="bg-slate-950 py-10 md:py-16 lg:py-20 xl:py-24">
+    <div class="container mx-auto px-3 md:px-6 lg:px-8">
+        <!-- Section Header Start -->
+        <div class="flex flex-col justify-center items-center gap-5 mb-6">
+            <h2 class="text-3xl lg:text-5xl font-bold text-slate-100">What Our Clients Say</h2>
+            <p class="text-slate-300 text-lg text-center">This is just a simple text made for this unique and awesome template, you can replace it with any text.</p>
+        </div>
+        <!-- Section Header End -->
 
+        
+    </div>
 
-
-
+</section>
+<!-- Testimonial Section End -->
 
 
 
@@ -959,6 +1019,54 @@
     }
   }
 </script>
+
+
+<!-- Counter Animation JS -->
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const counters = document.querySelectorAll(".counter");
+    const speed = 100; // Lower = faster
+
+    counters.forEach(counter => {
+      const animate = () => {
+        const target = +counter.getAttribute("data-target");
+        const count = +counter.innerText;
+        const inc = Math.ceil(target / speed);
+
+        if (count < target) {
+          counter.innerText = count + inc;
+          setTimeout(animate, 10);
+        } else {
+          counter.innerText = target;
+        }
+      };
+
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            animate();
+            observer.unobserve(counter);
+          }
+        });
+      }, { threshold: 0.5 });
+
+      observer.observe(counter);
+    });
+  });
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </body>
